@@ -1,3 +1,5 @@
+'use strict';
+
 async (login, password, fullName) => {
   const user = {
     Login: login,

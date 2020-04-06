@@ -1,3 +1,5 @@
+'use strict';
+
 async (login, password) => {
   const where = {
     Login: login,
