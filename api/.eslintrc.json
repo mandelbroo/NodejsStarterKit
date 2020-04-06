@@ -1,0 +1,13 @@
+{
+  "rules": {
+    "strict": [
+      "error",
+      "never"
+    ]
+  },
+  "globals": {
+    "BigInt": true,
+    "application": true,
+    "context": true
+  }
+}
