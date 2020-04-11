@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = {
   host: '127.0.0.1',
@@ -10,4 +10,4 @@ module.exports = {
     size: 2000,
     timeout: 3000,
   },
-};
+}

@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
-require('./unit.js');
-require('./system.js');
+require('./unit.js')
+require('./system.js')

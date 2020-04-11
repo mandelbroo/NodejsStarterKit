@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 
-const assert = require('assert').strict;
+const assert = require('assert').strict
 
-const Server = require('../lib/server.js');
+const Server = require('../lib/server.js')
 
-assert(Server);
+assert(Server)

@@ -33,7 +33,8 @@
   "scripts": {
     "test": "npm run -s lint && node ./test/all.js",
     "lint": "eslint .",
-    "start": "node main.js"
+    "start": "node main.js",
+    "cli": "node cli/cli.js"
   },
   "repository": {
     "type": "git",

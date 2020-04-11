@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 
-const assert = require('assert').strict;
+const assert = require('assert').strict
 
-const Logger = require('../lib/logger.js');
+const Logger = require('../lib/logger.js')
 
-assert(Logger);
+assert(Logger)

@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 
-const assert = require('assert').strict;
+const assert = require('assert').strict
 
-const Config = require('../lib/config.js');
+const Config = require('../lib/config.js')
 
-assert(Config);
+assert(Config)

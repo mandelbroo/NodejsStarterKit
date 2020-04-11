@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = {
   host: '127.0.0.1',
@@ -6,4 +6,4 @@ module.exports = {
   database: 'application',
   user: 'marcus',
   password: 'marcus',
-};
+}
