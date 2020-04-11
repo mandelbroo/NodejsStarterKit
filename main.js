@@ -1,26 +1,17 @@
 'use strict';
 
-const Application = require('./lib/application.js');
+const { Worker } = require('worker_threads');
 
-const application = new Application();
+const config = require('./config/server.js');
 
-application.on('started', () => {
-  application.logger.log('Application loaded');
-});
+const workers = [];
+for (let i = 0; i < config.ports.length; i++) {
+  const worker = new Worker('./worker.js');
+  workers.push(worker);
+}
 
 process.on('SIGINT', async () => {
-  if (application.finalization) return;
-  console.log();
-  application.logger.log('Graceful shutdown');
-  await application.shutdown();
-  application.logger.log('Bye');
-  process.exit(0);
+  for (const worker of workers) {
+    worker.postMessage({ name: 'stop' });
+  }
 });
-
-const logError = err => {
-  application.logger.error(err.stack);
-};
-
-process.on('uncaughtException', logError);
-process.on('warning', logError);
-process.on('unhandledRejection', logError);
